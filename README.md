@@ -1,7 +1,7 @@
 # 🪲 AphidCV - YOLOv8 Detect Container
 
 Esta imagem Docker é capaz de realizar a inferência em imagens de afídeos utilizando modelos YOLOv8 personalizados.  
-A versão `1.2` foi construída com suporte à montagem de volumes no host, permitindo maior flexibilidade para testes e ajustes no script ou modelos.
+A versão `2.0` foi construída com suporte à montagem de volumes no host, permitindo maior flexibilidade para testes e ajustes no script ou modelos.
 
 ---
 
@@ -10,7 +10,7 @@ A versão `1.2` foi construída com suporte à montagem de volumes no host, perm
 Para usar a imagem do container diretamente do Docker Hub, você pode fazer o **pull** da imagem com o seguinte comando:
 
 ```bash
-docker pull brendaslongotaca/script_detect:1.2
+docker pull brendaslongotaca/script_detect:2.0
 ```
 
 ---
@@ -44,7 +44,7 @@ docker run -it --rm \
   -v "$PWD/modelos:/application/modelos" \
   -v "$PWD/imagens:/application/imagens" \
   -v "$PWD/yolov8_cgpuhead_detect.py:/application/yolov8_cgpuhead_detect.py" \
-  brendaslongotaca/script_detect:1.2 imagens/<nome_da_imagem>.jpeg --especie <rp|sg|md|sa|mp|bb> --contrast <Float> --brightness <Int>
+  brendaslongotaca/script_detect:2.0 imagens/<nome_da_imagem>.jpeg --especie <rp|sg|md|sa|mp|bb> --contrast <Float> --brightness <Int>
 ```
 Os resultados são salvos em uma pasta com o nome da imagem, dentro da pasta "imagens".
 
@@ -62,7 +62,7 @@ docker run -it \
   -v "$PWD/modelos:/application/modelos" \
   -v "$PWD/imagens:/application/imagens" \
   -v "$PWD/yolov8_cgpuhead_detect.py:/application/yolov8_cgpuhead_detect.py" \
-  brendaslongotaca/script_detect:1.2
+  brendaslongotaca/script_detect:2.0
 ```
 
 ---

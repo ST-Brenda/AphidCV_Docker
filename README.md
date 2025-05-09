@@ -56,12 +56,10 @@ Os resultados são salvos em uma pasta com o nome da imagem, dentro da pasta "im
 Para acessar o shell do container internamente:
 
 ```bash
-docker run -it \
-  --entrypoint bash \
-  -v "$PWD/modelos:/application/modelos" \
-  -v "$PWD/imagens:/application/imagens" \
-  -v "$PWD/yolov8_cgpuhead_detect.py:/application/yolov8_cgpuhead_detect.py" \
-  brendaslongotaca/script_detect:2.0
+docker run --rm -it \
+    -v "$PWD:/application" \
+    brendaslongotaca/script_detect:2.0 \
+    bash
 ```
 
 ---

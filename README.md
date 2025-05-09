@@ -1,7 +1,7 @@
 # 🪲 AphidCV - YOLOv8 Detect Container
 
 Esta imagem Docker é capaz de realizar a inferência em imagens de afídeos utilizando modelos YOLOv8 personalizados.  
-A versão `2.0` foi construída com suporte à montagem de um volume no host, permitindo maior flexibilidade para testes e ajustes no script ou modelos, além da adição de novas imagens.
+A versão `2.0` foi construída com suporte à montagem de um volume no host, permitindo maior flexibilidade para testes e ajustes no script ou modelos, além da adição de novas imagens para detecção.
 
 ---
 

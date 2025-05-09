@@ -40,11 +40,10 @@ git clone https://github.com/ST-Brenda/AphidCV_Docker.git
 ### Rodar a inferência em uma imagem:
 
 ```bash
-docker run -it --rm \
-  -v "$PWD/modelos:/application/modelos" \
-  -v "$PWD/imagens:/application/imagens" \
-  -v "$PWD/yolov8_cgpuhead_detect.py:/application/yolov8_cgpuhead_detect.py" \
-  brendaslongotaca/script_detect:2.0 imagens/<nome_da_imagem>.jpeg --especie <rp|sg|md|sa|mp|bb> --contrast <Float> --brightness <Int>
+docker run --rm \
+    -v "$PWD:/application" \
+    brendaslongotaca/script_detect:2.0 \
+    python3 /application/yolov8_cgpuhead_detect.py /application/imagens/<nome_da_imagem>.jpeg --especie <rp|sg|md|sa|mp|bb> --contrast <Float> --brightness <Int>
 ```
 Os resultados são salvos em uma pasta com o nome da imagem, dentro da pasta "imagens".
 

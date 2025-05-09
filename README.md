@@ -45,7 +45,7 @@ docker run --rm \
     brendaslongotaca/script_detect:2.0 \
     python3 /application/yolov8_cgpuhead_detect.py /application/imagens/<nome_da_imagem>.jpeg --especie <rp|sg|md|sa|mp|bb> --contrast <Float> --brightness <Int>
 ```
-O comando #-v "$PWD:/application"# compartilha com o container todo o conteúdo do diretório onde o comando for executado.  
+O comando '-v "$PWD:/application"' compartilha com o container todo o conteúdo do diretório onde o comando for executado.  
 Os resultados são salvos em uma pasta com o nome da imagem, dentro da pasta "imagens".
 
 

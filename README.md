@@ -26,7 +26,7 @@ No diretório onde o container será executado, é necessário manter a seguinte
 ├── requirements.txt          # Lista de dependências do Python
 └── yolov8_cgpuhead_detect.py # Script que realiza a inferência
 ```
-A pasta "imagens" contém uma imagem de afídeos para exemplo, adicione suas próprias imagens na pasta.
+A pasta "imagens" contém uma imagem de afídeos para exemplo, adicione suas próprias imagens na pasta.  
 Você pode clonar o presente repositório para obter o script da inferência e o arquivo com as dependências do Python, através do comando:
 
 ```bash
